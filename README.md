@@ -57,7 +57,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 ### Labs
 
 - [PortSwigger Web Security Academy](https://portswigger.net/web-security)
-- [Natas by OverTheWire](http://overthewire.org/wargames/natas/)
+- [Natas by OverTheWire](https://overthewire.org/wargames/natas/)
 
 <a name="crypto"></a>
 # Cryptography
