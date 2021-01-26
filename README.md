@@ -18,10 +18,10 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 	- [Labs](#web-labs)
 - [Cryptography](#crypto)
 	- [Books](#crypto-books)
-	- [Labs](#cryto-labs)
+	- [Labs](#crypto-labs)
 
 <a name="linux"></a>
-## Linux
+# Linux
 
 <a name="linux-labs"></a>
 ### Labs
@@ -29,7 +29,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - [Bandit by OverTheWire](https://overthewire.org/wargames/bandit/)
 
 <a name="net"></a>
-## Networking
+# Networking
 
 <a name="net-books"></a>
 ### Books
@@ -37,7 +37,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - Computer Networking - A Top-Down Approach
 
 <a name="web"></a>
-## Web Security and Exploitation
+# Web Security and Exploitation
 
 <a name="web-sites"></a>
 ### Websites
@@ -60,7 +60,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - [Natas by OverTheWire](http://overthewire.org/wargames/natas/)
 
 <a name="crypto"></a>
-## Cryptography
+# Cryptography
 
 <a name="crypto-books"></a>
 ### Books
@@ -68,7 +68,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - Applied Cryptography by Bruce Schneier
 - Handbook of Applied Cryptography
 
-<a name="crypto-sites"></a>
+<a name="crypto-labs"></a>
 ### Labs
 
 - [CryptoHack](https://cryptohack.org/)
