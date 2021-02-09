@@ -106,3 +106,26 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - [CyberChef](https://gchq.github.io/CyberChef/)
 - [dCode](https://www.dcode.fr/en)
 - [Ciphey](https://github.com/Ciphey/Ciphey)
+
+# Reversing
+
+<a name="reversing-books"></a>
+### Books and Tutorials
+
+- Hacking, The Art Of Exploitation
+- [LiveOverflow](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
+- [A Crash Course in x86 Assembly for Reverse Engineers](https://sensepost.com/blogstatic/2014/01/SensePost_crash_course_in_x86_assembly-.pdf)
+
+<a name="reversing-labs"></a>
+### Labs
+
+- [Crackmes](https://crackmes.one/)
+
+<a name="crypto-tools"></a>
+### Tools
+
+- [GDB](https://www.gnu.org/software/gdb/)
+- [Ghidra](https://ghidra-sre.org/)
+- [radare2](https://github.com/hashcat/hashcat)
+- [IDA Pro](https://www.hex-rays.com/products/ida/)
+- [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
