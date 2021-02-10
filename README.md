@@ -22,6 +22,10 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 	- [Books](#crypto-books)
 	- [Labs](#crypto-labs)
 	- [Tools](#crypto-tools)
+- [Reversing](#reversing)
+	- [Books](#reversing-books)
+	- [Labs](#reversing-labs)
+	- [Tools](#reversing-tools)
 
 <a name="linux"></a>
 # Linux
@@ -107,7 +111,8 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - [dCode](https://www.dcode.fr/en)
 - [Ciphey](https://github.com/Ciphey/Ciphey)
 
-# Reverse Engineering
+<a name="reversing"></a>
+# Reversing
 
 <a name="reversing-books"></a>
 ### Books and Tutorials
@@ -121,7 +126,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 
 - [Crackmes](https://crackmes.one/)
 
-<a name="crypto-tools"></a>
+<a name="reversing-tools"></a>
 ### Tools
 
 - [GDB](https://www.gnu.org/software/gdb/)
