@@ -107,7 +107,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - [dCode](https://www.dcode.fr/en)
 - [Ciphey](https://github.com/Ciphey/Ciphey)
 
-# Reversing
+# Reverse Engineering
 
 <a name="reversing-books"></a>
 ### Books and Tutorials
@@ -126,6 +126,6 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 
 - [GDB](https://www.gnu.org/software/gdb/)
 - [Ghidra](https://ghidra-sre.org/)
-- [radare2](https://github.com/hashcat/hashcat)
+- [radare2](https://www.radare.org/)
 - [IDA Pro](https://www.hex-rays.com/products/ida/)
 - [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
