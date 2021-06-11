@@ -1,3 +1,7 @@
+---
+title: Intro to CTFs
+---
+
 # Intro to CTFs
 
 #### + other things you should know
