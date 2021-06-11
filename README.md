@@ -1,10 +1,10 @@
 # Cybersecurity Resources
 
-Cybersecurity resources you can refer to ~before you train like a Shonen anime's MC and hack your annoying neighbour's computer~
+Cybersecurity resources you can refer to ~while training like a Shonen anime's MC to hack your annoying neighbour's computer~
 
-# Contributing
+[Here](slides/README.md) lie the slides from our sessions
 
-This repo will always be open for more cool content, just have a look at [CONTRIBUTING.md](CONTRIBUTING.md) before you open a PR.
+Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersecurity) for the website view of the same
 
 # Table of Contents
 
@@ -46,12 +46,6 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 <a name="net-tools"></a>
 ### Tools
 
-- ping
-- traceroute
-- netstat
-- dig
-- whois
-- nslookup
 - [Nmap](https://github.com/nmap/nmap)
 - [Wireshark](https://github.com/wireshark/wireshark)
 
@@ -134,3 +128,7 @@ This repo will always be open for more cool content, just have a look at [CONTRI
 - [radare2](https://www.radare.org/)
 - [IDA Pro](https://www.hex-rays.com/products/ida/)
 - [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
+
+# Contributing
+
+This repo will always be open for more cool content, just have a look at [CONTRIBUTING.md](CONTRIBUTING.md) before you open a PR.
