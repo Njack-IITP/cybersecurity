@@ -4,7 +4,7 @@ Cybersecurity resources you can refer to ~while training like a Shonen anime's M
 
 [Here](slides/README.md) lie the slides from our sessions
 
-Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersecurity) for the website view of the same
+Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersecurity/) for the website view of the same
 
 # Table of Contents
 
@@ -126,7 +126,7 @@ Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersec
 - [GDB](https://www.gnu.org/software/gdb/)
 - [Ghidra](https://ghidra-sre.org/)
 - [radare2](https://www.radare.org/)
-- [IDA Pro](https://www.hex-rays.com/products/ida/)
+- [IDA Pro](https://hex-rays.com/products/ida/)
 - [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
 
 # Contributing
