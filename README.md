@@ -126,7 +126,7 @@ Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersec
 - [GDB](https://www.gnu.org/software/gdb/)
 - [Ghidra](https://ghidra-sre.org/)
 - [radare2](https://www.radare.org/)
-- [IDA Pro](https://hex-rays.com/products/ida/)
+- [IDA Pro](https://hex-rays.com/ida-pro)
 - [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
 
 # Contributing
