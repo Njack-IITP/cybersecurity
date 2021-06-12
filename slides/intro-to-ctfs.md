@@ -60,37 +60,37 @@ title: Intro to CTFs
 * OSINT
 * Programming
 
-----
+---
 
 ### Web Exploitation
 
 * abc
 
-----
+---
 
 ### Reverse Engineering
 
 * abc
 
-----
+---
 
 ### Forensics
 
 * abc
 
-----
+---
 
 ### Cryptography
 
 * abc
 
-----
+---
 
 ### OSINT
 
 * abc
 
-----
+---
 
 ### Programming
 
