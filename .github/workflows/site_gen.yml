@@ -1,6 +1,10 @@
 name: RevealMDSiteBuild
 
-on: push
+on:
+  push:
+    paths:
+      - 'slides/**'
+      - '!docs/**'
 
 jobs:
   generate_site:
@@ -18,7 +22,7 @@ jobs:
           run: npm i reveal-md
 
         - name: md -> html conversion using revealmd
-          run: ./node_modules/.bin/reveal-md --static docs slides
+          run: ./node_modules/.bin/reveal-md slides --static docs --highlight-theme github
 
         - name: push site files
           run: |
