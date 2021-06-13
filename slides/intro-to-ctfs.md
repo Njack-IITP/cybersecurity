@@ -78,33 +78,33 @@ title: Intro to CTFs
 
 ----
 
-![/slides/assets/intro-to-ctfs/re/levelsofapl.png](/slides/assets/intro-to-ctfs/re/levelsofapl.png)
+![assets/intro-to-ctfs/re/levelsofapl.png](assets/intro-to-ctfs/re/levelsofapl.png)
 
 ----
 
 ## Example
 
-![/slides/assets/intro-to-ctfs/re/Untitled.png](/slides/assets/intro-to-ctfs/re/Untitled.png)
+![assets/intro-to-ctfs/re/untitled.png](assets/intro-to-ctfs/re/untitled.png)
 
 ----
 
-![/slides/assets/intro-to-ctfs/re/Untitled%201.png](/slides/assets/intro-to-ctfs/re/Untitled%201.png)
+![assets/intro-to-ctfs/re/untitled_01.png](assets/intro-to-ctfs/re/untitled_01.png)
 
 ----
 
-![/slides/assets/intro-to-ctfs/re/Untitled%202.png](/slides/assets/intro-to-ctfs/re/Untitled%202.png)
+![assets/intro-to-ctfs/re/untitled_02.png](assets/intro-to-ctfs/re/untitled_02.png)
 
 ----
 
-![/slides/assets/intro-to-ctfs/re/Untitled%203.png](/slides/assets/intro-to-ctfs/re/Untitled%203.png)
+![assets/intro-to-ctfs/re/untitled_03.png](assets/intro-to-ctfs/re/untitled_03.png)
 
 ----
 
-![/slides/assets/intro-to-ctfs/re/Untitled%204.png](/slides/assets/intro-to-ctfs/re/Untitled%204.png)
+![assets/intro-to-ctfs/re/untitled_04.png](assets/intro-to-ctfs/re/untitled_04.png)
 
 ----
 
-![/slides/assets/intro-to-ctfs/re/Untitled%205.png](/slides/assets/intro-to-ctfs/re/Untitled%205.png)
+![assets/intro-to-ctfs/re/untitled_05.png](assets/intro-to-ctfs/re/untitled_05.png)
 
 ----
 
