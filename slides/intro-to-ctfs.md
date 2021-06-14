@@ -186,34 +186,45 @@ SELECT * FROM account WHERE name="xyz" OR 1=1#";
 
 ![assets/intro-to-ctfs/re/untitled_05.png](assets/intro-to-ctfs/re/untitled_05.png)
 
-----
-
-### Books and Tutorials
-
-- Hacking, The Art Of Exploitation
-- [LiveOverflow](https://www.youtube.com/watch?v=iyAyN3GFM7A&list=PLhixgUqwRTjxglIswKp9mpkfPNfHkzyeN)
-- [A Crash Course in x86 Assembly for Reverse Engineers](https://sensepost.com/blogstatic/2014/01/SensePost_crash_course_in_x86_assembly-.pdf)
-
-
-### Labs
-
-- [Crackmes](https://crackmes.one/)
-
-----
-
-### Tools
-
-- [GDB](https://www.gnu.org/software/gdb/)
-- [Ghidra](https://ghidra-sre.org/)
-- [radare2](https://www.radare.org/)
-- [IDA Pro](https://hex-rays.com/ida-pro/)
-- [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
-
 ---
 
 ### Forensics
 
-* abc
+- Forensics is the art of recovering the digital trail left on a computer. There are plently of methods to find data which is seemingly deleted, not stored, or worse, covertly recorded.
+
+- In a CTF context, "Forensics" challenges can include file format analysis, steganography, memory dump analysis, or network packet capture analysis.
+
+- Any challenge to examine and process a hidden piece of information out of static data files (as opposed to executable programs or remote servers) could be considered a Forensics challenge
+
+----
+
+### Example
+
+We are given an image, and it might contain certain hidden information
+
+![assets/intro-to-ctfs/forensics/dog.jpg](assets/intro-to-ctfs/forensics/dog.jpg)
+
+----
+
+We start by examining the file type and other metadata of the image using the tool `exiftool`
+
+![assets/intro-to-ctfs/forensics/exiftool.png](assets/intro-to-ctfs/forensics/exiftool.png)
+
+`exiftool` didn't tell us anything usefull except that it is infact a `jpeg` image
+
+----
+
+Now we will use `binwalk` tool to examine if there is some compressed data inside the image
+
+![assets/intro-to-ctfs/forensics/binwalk.png](assets/intro-to-ctfs/forensics/binwalk.png)
+
+looks like there is a `hidden_text.txt`file  compressed in the image. We can extract it using `binwalk -e` command.
+
+----
+
+![assets/intro-to-ctfs/forensics/extract.png](assets/intro-to-ctfs/forensics/extract.png)
+
+Finally we got the "flag".
 
 ---
 
