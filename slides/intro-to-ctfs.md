@@ -232,17 +232,54 @@ Finally we got the "flag".
 
 * Cryptic message with a hint in the challenge description or title
 * Deeper concepts require a good knowledge of mathematics
+* Rotation ciphers are a starting point
+
+----
+
+### ROTN
+
+* Encryption by shifting each character by N places to the right
+* Most popular - **ROT13** aka Caesar Cipher
+
+$$E_n(x) = (x+n) mod 26$$
+
+$$E_n^\prime(x) = D_n(x) = (x-n) mod 26$$
 
 ----
 
 ### Challenge #4
 
-* Caesar cipher
-* Base64
+**Encrypted message:** (HEX)
+
+`170d05080a0d0c0a19010a06041e06020a19`
+
+**Encryption Key:** (HEX)
+
+`6468696e6368616b706f6f6a61726f636b73`
+
+**Encryption Method:**
+
+`XOR`
+
+Decrypt the message
 
 ----
 
 ### Solution
+
+**Property of XOR:**
+
+1. $$a \oplus a = 0$$
+
+2. $$a \oplus 0 = a$$
+
+----
+
+$$\implies msg \oplus key \oplus key = msg$$
+
+XOR the encrypted message with the key again to get the original message again
+
+`73656c6669656d61696e656c656c6961616a`
 
 ---
 
@@ -283,18 +320,41 @@ Google query:
 
 ### Challenge #6
 
-* You are presented with a quiz website
-* 1000Q, single right answer
-* Wrong answer resets your score BUT
-* Also provides with the right answer
+* You are given a large chunk of text worth easily over 100MB
+
+```
+akOjas;kdfjFs;kdfjasFkfja;kfajf;kIjfdkjCfkafEk
+weruqwIeuqworieuSwoeruqperuqpweruqTeriuqwpHerw
+zmnEcv,mncv,mznvzvnzvBvnzvnzmvnzmcvnzExvbzcvbs
+qwemSnq,embrtjThvovchzoivucTaanfamfdnqVewnrucp
+ewnSqmnrzhvcHicvuapiuasdfna.OenrqwmenrjhWziocu
+```
+
+----
+
+## HINT
+
+* Anything odd?
+
+```
+akOjas;kdfjFs;kdfjasFkfja;kfajf;kIjfdkjCfkafEk
+weruqwIeuqworieuSwoeruqperuqpweruqTeriuqwpHerw
+zmnEcv,mncv,mznvzvnzvBvnzvnzmvnzmcvnzExvbzcvbs
+qwemSnq,embrtjThvovchzoivucTaanfamfdnqVewnrucp
+ewnSqmnrzhvcHicvuapiuasdfna.OenrqwmenrjhWziocu
+```
 
 ----
 
 ### Solution
 
-* Automated web-scraping
-* Enter a random answer and collect all the right answers with their questions
-* This time, get the question, find its answer and enter it
+* Notice that the capital letters form something meaningful
+* Some ezpz programming with ASCII values
+* Extracted capital letter form this:
+
+```
+OFFICEISTHEBESTTVSHOW
+```
 
 ---
 
@@ -332,9 +392,10 @@ If you dislike any or all of the following
 * styling with CSS
 * creating your webpage from scratch
 
-then, **Jekyll** is your friend
+then, [**Jekyll**](https://github.com/topics/jekyll-theme) is your friend
 
 ----
 
 * Write content in markdown and Jekyll will generate the HTML for it
 * **GitHub pages** offers free and easy hosting solution for static websites
+* Check out `jekyll-themes` on GitHub for amazing repos and sites
