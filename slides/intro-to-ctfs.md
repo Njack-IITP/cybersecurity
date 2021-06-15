@@ -25,6 +25,14 @@ title: Intro to CTFs
 * In pentesting and some CTF variants, the flag can be found in a file
 * Accessible only when you break in and gain access
 
+----
+
+### ctftime.org
+
+* CTF calendar
+* World-wide and country-wide team ratings
+* Writeups
+
 ---
 
 ## Variants
@@ -51,7 +59,7 @@ title: Intro to CTFs
 * Each team will be given a vulnerable service
 * Teams will defend their own service and patch it up
 * Simultaneously, attack the other teams' services and develop exploits
-* DEFCON and NYU-CSAW Finals - must-watch
+* DEFCON and NYU-CSAW Finals
 
 ----
 
@@ -71,19 +79,75 @@ title: Intro to CTFs
 
 * Black box testing
 * Break built-in security measures
+* Example: side-channel attacks
 
 ---
 
 ## Categories
 
+* Cryptography
 * Web Exploitation
 * Reverse Engineering
 	* Binary Exploitation
 * Forensics
 	* Steganography
-* Cryptography
 * OSINT
 * Programming
+
+---
+
+### Cryptography
+
+* Cryptic message with a hint in the challenge description or title
+* Deeper concepts require a good knowledge of mathematics
+* Rotation ciphers are a starting point
+
+----
+
+### ROTN
+
+* Encryption by shifting each character by N places to the right
+* Most popular - **ROT13** aka Caesar Cipher
+
+$$E_n(x) = (x+n) mod 26$$
+
+$$E_n^\prime(x) = D_n(x) = (x-n) mod 26$$
+
+----
+
+### Challenge #4
+
+**Encrypted message:** (HEX)
+
+`170d05080a0d0c0a19010a06041e06020a19`
+
+**Encryption Key:** (HEX)
+
+`6468696e6368616b706f6f6a61726f636b73`
+
+**Encryption Method:**
+
+`XOR`
+
+Decrypt the message
+
+----
+
+### Solution
+
+**Property of XOR:**
+
+1. $$a \oplus a = 0$$
+
+2. $$a \oplus 0 = a$$
+
+----
+
+$$\implies msg \oplus key \oplus key = msg$$
+
+XOR the encrypted message with the key again to get the original message again
+
+`73656c6669656d61696e656c656c6961616a`
 
 ---
 
@@ -101,50 +165,116 @@ title: Intro to CTFs
 
 ### Challenge #1
 
-* Text box that receives input of name of person
-* Outputs the details of that person
+* Text box that receives input of ID of person
+* Outputs all the details of that person
 * Incomplete or invalid queries err out silently
+
+![valid example](assets/intro-to-ctfs/web/sqli1.png)
 
 ----
 
-#### HINT1
+### HINT 1
 
 SQL query in the backend might be something similar to
 
 ```SQL
-SELECT * FROM accounts WHERE name="$INPUT_NAME";
+SELECT * FROM accounts WHERE id="$INPUT_ID";
 ```
 
 ----
 
-#### HINT2
+### HINT 2
 
 Think about logical operators
 
+----
+
+### HINT 2
+
+**$INPUT_ID**:
+
+```
+1" OR <SOME_CONDITION>
+```
+
+**Complete query**:
+
 ```SQL
-SELECT * FROM accounts WHERE name="$INPUT_NAME";
+SELECT * FROM accounts WHERE id="1" OR <SOME_CONDITION>";
 ```
 
 ----
 
-#### HINT3
+### HINT 3
+
+Think about a condition which is always true
+
+----
+
+### HINT 3
+
+**$INPUT_ID**:
+
+```
+1" OR 1=1
+```
+
+**Complete query**:
+
+```SQL
+SELECT * FROM accounts WHERE id="1" OR 1=1";
+```
+
+**But**, is this query valid?
+
+----
+
+### HINT 4
+
+How do we make this query valid?
+
+Find the connect
 
 * `//` in C++
 * `#` in Python
 
+----
+
+### HINT 4
+
+The SQL query can be terminated by introducing comment characters in the input
+
+**$INPUT_ID**:
+
+```
+1" OR 1=1#
+```
+
+**Complete query**:
+
 ```SQL
-SELECT * FROM accounts WHERE name="$INPUT_NAME";
+SELECT * FROM accounts WHERE id="1" OR 1=1#";
 ```
 
 ----
 
 ### Solution
 
-* The SQL query can be broken by introducing comment characters in the input like
+**Final query**:
 
 ```SQL
-SELECT * FROM account WHERE name="xyz" OR 1=1#";
+SELECT * FROM account WHERE id="1" OR 1=1#";
 ```
+
+interpreted as
+
+```SQL
+SELECT * FROM account WHERE id="1" OR 1=1;
+```
+
+----
+
+![boom, you just got sqli-d](assets/intro-to-ctfs/web/sqli2.png)
 
 ---
 
@@ -228,61 +358,6 @@ Finally we got the "flag".
 
 ---
 
-### Cryptography
-
-* Cryptic message with a hint in the challenge description or title
-* Deeper concepts require a good knowledge of mathematics
-* Rotation ciphers are a starting point
-
-----
-
-### ROTN
-
-* Encryption by shifting each character by N places to the right
-* Most popular - **ROT13** aka Caesar Cipher
-
-$$E_n(x) = (x+n) mod 26$$
-
-$$E_n^\prime(x) = D_n(x) = (x-n) mod 26$$
-
-----
-
-### Challenge #4
-
-**Encrypted message:** (HEX)
-
-`170d05080a0d0c0a19010a06041e06020a19`
-
-**Encryption Key:** (HEX)
-
-`6468696e6368616b706f6f6a61726f636b73`
-
-**Encryption Method:**
-
-`XOR`
-
-Decrypt the message
-
-----
-
-### Solution
-
-**Property of XOR:**
-
-1. $$a \oplus a = 0$$
-
-2. $$a \oplus 0 = a$$
-
-----
-
-$$\implies msg \oplus key \oplus key = msg$$
-
-XOR the encrypted message with the key again to get the original message again
-
-`73656c6669656d61696e656c656c6961616a`
-
----
-
 ### OSINT
 
 * Open Source INTelligence
@@ -300,7 +375,7 @@ XOR the encrypted message with the key again to get the original message again
 
 ### Solution
 
-Google query:
+**Google query**:
 
 ```
 <name> <roll_num_format> site:<college website>
@@ -358,6 +433,16 @@ OFFICEISTHEBESTTVSHOW
 
 ---
 
+### Pentesting
+
+* Penetration testing
+* "Penetrate" the security measures and gain access to the system
+* Multiple ways to exploit a single system
+* Usually involves one or more of the above categories
+* Simulates real world scenarios
+
+---
+
 ## Practice sites
 
 * [TryHackMe](https://tryhackme.com)
@@ -372,14 +457,18 @@ OFFICEISTHEBESTTVSHOW
 
 ---
 
-## Writeups
+## Writeups and reports
 
 * Make sure to record your approaches
 * Preferably in markdown, because
 	* Plain text -> easily transferrable
+	* Exportable to literally any other format
 	* No need to install another application
 	* Your favourite text editor will do
-* Will benefit others as well
+* Will definitely benefit you in long pentests where you will connect multiple services and systems to develop an exploit
+* Professional pentesters are expected to provide 30-page reports
+* [OffSec report](https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf)
+* Helpful to others too
 
 ---
 
@@ -399,3 +488,13 @@ then, [**Jekyll**](https://github.com/topics/jekyll-theme) is your friend
 * Write content in markdown and Jekyll will generate the HTML for it
 * **GitHub pages** offers free and easy hosting solution for static websites
 * Check out `jekyll-themes` on GitHub for amazing repos and sites
+
+---
+
+## More about OWASP
+
+* [OWASP](https://owasp.org) is a non-profit org
+* Aims to make security more accessible
+* [Local chapters](https://owasp.org/chapters/) work in this spirit
+* Chapters have comm channels and regular events
+* Stay tuned for more exciting events from [our chapter](https://owasp.org/www-chapter-indian-institute-of-technology-patna/)
