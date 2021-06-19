@@ -467,6 +467,9 @@ OFFICEISTHEBESTTVSHOW
 	* Exportable to literally any other format
 	* No need to install another application
 	* Your favourite text editor will do
+
+----
+
 * Will definitely benefit you in long pentests where you will connect multiple services and systems to develop an exploit
 * Professional pentesters are expected to provide 30-page reports
 * [OffSec report](https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf)
