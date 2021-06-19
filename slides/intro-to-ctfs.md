@@ -332,11 +332,7 @@ SELECT * FROM account WHERE id="1" OR 1=1;
 
 We are given an image, and it might contain certain hidden information
 
-![assets/intro-to-ctfs/forensics/dog.jpg](assets/intro-to-ctfs/forensics/dog.jpg)
-
-----
-
-<img src = "assets/intro-to-ctfs/forensics/dog.jpg" width = 300>
+<img src = "assets/intro-to-ctfs/forensics/dog.jpg" width = "300">
 
 ----
 
