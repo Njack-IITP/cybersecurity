@@ -336,6 +336,10 @@ We are given an image, and it might contain certain hidden information
 
 ----
 
+<img src = "assets/intro-to-ctfs/forensics/dog.jpg" width = 300>
+
+----
+
 We start by examining the file type and other metadata of the image using the tool `exiftool`
 
 ![assets/intro-to-ctfs/forensics/exiftool.png](assets/intro-to-ctfs/forensics/exiftool.png)
