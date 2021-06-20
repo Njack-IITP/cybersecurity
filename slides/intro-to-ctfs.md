@@ -12,7 +12,6 @@ title: Intro to CTFs
 
 * Capture The Flag
 * Special kind of information security competitions
-* Use [ctftime.org](https://ctftime.org) to track CTFs and your team’s performance
 
 ----
 
@@ -22,13 +21,14 @@ title: Intro to CTFs
 * Can be found only when you successfully solve the challenge
 * Thus, submitted as a proof of completion
 * Usually of a format like `xyzCTF{}`
-* In pentesting and some CTF variants, the flag can be found in a file
-* Accessible only when you break in and gain access
+	* `xyzCTF{f0und_7h3_fl4g}`
+* In pentesting and some CTF variants, the flag can be found in a file accessible only when you break into the system
 
 ----
 
 ### ctftime.org
 
+* Use [ctftime.org](https://ctftime.org) to track CTFs and your team’s performance
 * CTF calendar
 * World-wide and country-wide team ratings
 * Writeups
@@ -49,7 +49,8 @@ title: Intro to CTFs
 * Challenges from various categories
 * Most famous
 * Find the flag and submit it for points
-* Sometimes, dynamic scoring -> more solves, less points
+* Dynamic scoring
+	* -> more solves, less points
 * Extra points for the first solve - `First Blood`
 
 ----
@@ -115,7 +116,7 @@ $$E_n^\prime(x) = D_n(x) = (x-n) mod 26$$
 
 ----
 
-### Challenge #4
+### Challenge #1
 
 **Encrypted message:** (HEX)
 
@@ -163,7 +164,7 @@ XOR the encrypted message with the key again to get the original message again
 
 ----
 
-### Challenge #1
+### Challenge #2
 
 * Text box that receives input of ID of person
 * Outputs all the details of that person
@@ -178,7 +179,7 @@ XOR the encrypted message with the key again to get the original message again
 SQL query in the backend might be something similar to
 
 ```SQL
-SELECT * FROM accounts WHERE id="$INPUT_ID";
+SELECT * FROM accounts WHERE id="$INPUT_ID"
 ```
 
 ----
@@ -200,7 +201,7 @@ Think about logical operators
 **Complete query**:
 
 ```SQL
-SELECT * FROM accounts WHERE id="1" OR <SOME_CONDITION>";
+SELECT * FROM accounts WHERE id="1" OR <SOME_CONDITION>"
 ```
 
 ----
@@ -222,7 +223,7 @@ Think about a condition which is always true
 **Complete query**:
 
 ```SQL
-SELECT * FROM accounts WHERE id="1" OR 1=1";
+SELECT * FROM accounts WHERE id="1" OR 1=1"
 ```
 
 **But**, is this query valid?
@@ -233,43 +234,25 @@ SELECT * FROM accounts WHERE id="1" OR 1=1";
 
 How do we make this query valid?
 
-Find the connect
-
-* `//` in C++
-* `#` in Python
-
 ----
 
-### HINT 4
+### Solution
 
-The SQL query can be terminated by introducing comment characters in the input
+The SQL query can be made valid by
+
+* making the condition a string check i.e "1"="1"
+* and thus accounting for the extra `"`
 
 **$INPUT_ID**:
 
 ```
-1" OR 1=1#
+1" OR "1"="1
 ```
 
 **Complete query**:
 
 ```SQL
-SELECT * FROM accounts WHERE id="1" OR 1=1#";
-```
-
-----
-
-### Solution
-
-**Final query**:
-
-```SQL
-SELECT * FROM account WHERE id="1" OR 1=1#";
-```
-
-interpreted as
-
-```SQL
-SELECT * FROM account WHERE id="1" OR 1=1;
+SELECT * FROM accounts WHERE id="1" OR "1"="1"
 ```
 
 ----
@@ -350,13 +333,13 @@ Now we will use `binwalk` tool to examine if there is some compressed data insid
 
 ![assets/intro-to-ctfs/forensics/binwalk.png](assets/intro-to-ctfs/forensics/binwalk.png)
 
-looks like there is a `hidden_text.txt`file  compressed in the image. We can extract it using `binwalk -e` command.
+looks like there is a `hidden_text.txt` file  compressed in the image. We can extract it using `binwalk -e` command.
 
 ----
 
 ![assets/intro-to-ctfs/forensics/extract.png](assets/intro-to-ctfs/forensics/extract.png)
 
-Finally we got the "flag".
+Finally we've got the "flag".
 
 ---
 
@@ -389,8 +372,9 @@ Finally we got the "flag".
 
 * Programming challenge
 * Usually automation related or simple problem-solving
-* **Python** is high-level general purpose programming language
+* **Python** is a high-level general purpose programming language
 	* Huge library and community
+	* Easy to learn and v useful
 * Used in all places, right from RE to WE
 
 ----
@@ -426,7 +410,7 @@ ewnSqmnrzhvcHicvuapiuasdfna.OenrqwmenrjhWziocu
 ### Solution
 
 * Notice that the capital letters form something meaningful
-* Some ezpz programming with ASCII values
+* \*insert some ezpz programming with ASCII values\*
 * Extracted capital letter form this:
 
 ```
@@ -451,6 +435,8 @@ OFFICEISTHEBESTTVSHOW
 * [VulnHub](https://www.vulnhub.com/)
 * [HackTheBox](https://hackthebox.eu)
 
+(in that order)
+
 ---
 
 **Don't be a script kiddie**
@@ -462,18 +448,18 @@ OFFICEISTHEBESTTVSHOW
 ## Writeups and reports
 
 * Make sure to record your approaches
+* Will definitely benefit you in long pentests and challenges where you will have to connect multiple services and systems to exploit the system
+* Helpful to others too
+
+----
+
+* Professional pentesters are expected to provide 30-page reports
+* [OffSec report](https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf)
 * Preferably in markdown, because
 	* Plain text -> easily transferrable
 	* Exportable to literally any other format
 	* No need to install another application
 	* Your favourite text editor will do
-
-----
-
-* Will definitely benefit you in long pentests where you will connect multiple services and systems to develop an exploit
-* Professional pentesters are expected to provide 30-page reports
-* [OffSec report](https://www.offensive-security.com/reports/sample-penetration-testing-report.pdf)
-* Helpful to others too
 
 ---
 
@@ -486,13 +472,13 @@ If you dislike any or all of the following
 * styling with CSS
 * creating your webpage from scratch
 
-then, [**Jekyll**](https://github.com/topics/jekyll-theme) is your friend
+then, [**Jekyll**](https://jekyllrb.com/) is your friend
 
 ----
 
 * Write content in markdown and Jekyll will generate the HTML for it
-* **GitHub pages** offers free and easy hosting solution for static websites
-* Check out `jekyll-themes` on GitHub for amazing repos and sites
+* [**GitHub pages**](https://pages.github.com) offers free and easy hosting solution for static websites
+* Check out [`jekyll-themes`](https://github.com/topics/jekyll-themes) on GitHub for amazing repos and sites
 
 ---
 
