@@ -22,7 +22,7 @@ jobs:
           run: npm i reveal-md
 
         - name: md -> html conversion using revealmd
-          run: ./node_modules/.bin/reveal-md slides --static docs --highlight-theme github
+          run: ./node_modules/.bin/reveal-md slides --static docs --highlight-theme dracula
 
         - name: push site files
           run: |

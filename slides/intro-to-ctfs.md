@@ -1,5 +1,7 @@
 ---
 title: Intro to CTFs
+revealOptions:
+  transition: 'slide'
 ---
 
 # Intro to CTFs
@@ -383,7 +385,7 @@ Finally we've got the "flag".
 
 * You are given a large chunk of text worth easily over 100MB
 
-```
+```text
 akOjas;kdfjFs;kdfjasFkfja;kfajf;kIjfdkjCfkafEk
 weruqwIeuqworieuSwoeruqperuqpweruqTeriuqwpHerw
 zmnEcv,mncv,mznvzvnzvBvnzvnzmvnzmcvnzExvbzcvbs
@@ -397,7 +399,7 @@ ewnSqmnrzhvcHicvuapiuasdfna.OenrqwmenrjhWziocu
 
 * Anything odd?
 
-```
+```text
 akOjas;kdfjFs;kdfjasFkfja;kfajf;kIjfdkjCfkafEk
 weruqwIeuqworieuSwoeruqperuqpweruqTeriuqwpHerw
 zmnEcv,mncv,mznvzvnzvBvnzvnzmvnzmcvnzExvbzcvbs
@@ -413,7 +415,7 @@ ewnSqmnrzhvcHicvuapiuasdfna.OenrqwmenrjhWziocu
 * \*insert some ezpz programming with ASCII values\*
 * Extracted capital letter form this:
 
-```
+```text
 OFFICEISTHEBESTTVSHOW
 ```
 
