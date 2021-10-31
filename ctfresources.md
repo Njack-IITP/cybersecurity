@@ -16,3 +16,25 @@ A really good list of resources and practice websites for all categories
 
 [CTF 101](https://ctf101.org/)\
 A documentation for beginners.
+
+[HackTricks](https://book.hacktricks.xyz/)
+Has hacking tricks and techniques that have been gathered from CTFs, apps and reading researches and news
+- Indroduction
+- Shells
+- linux/Unix
+- MacOS
+- Windows
+- Forensics
+- Reversing 
+- Cryptography and a lot more...
+
+[CTF Checklist for Beginners](https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/)
+Tip, tools and knoeledge that beginners should be familiarised with to participate in CTF
+- OS
+- Cryptography
+- Steganogrpahy
+- Forensics
+- Reversing
+- Pwn
+- Web and others...
+
