@@ -26,6 +26,9 @@ Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersec
 	- [Books](#reversing-books)
 	- [Labs](#reversing-labs)
 	- [Tools](#reversing-tools)
+- [CTF Resources](#CTF-Resources)
+	- [Websites](#ctf-sites)
+	- [Labs](#ctf-labs)
 
 <a name="linux"></a>
 # Linux
@@ -128,6 +131,24 @@ Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersec
 - [radare2](https://www.radare.org/)
 - [IDA Pro](https://hex-rays.com/ida-pro/)
 - [More](https://github.com/apsdehal/aWEsoMe-cTf#reversing)
+
+<a name="CTF-Resources"></a>
+# CTF Resources
+
+<a name="ctf-sites"></a>
+### Websites
+
+- [DEF CON CTF Archieve](https://archive.ooo/)
+- [CTF Field Guide](https://trailofbits.github.io/ctf/)
+- [A beginners guide to CTFing](https://jaimelightfoot.com/blog/so-you-want-to-ctf-a-beginners-guide/)
+- [CTF 101](https://ctf101.org/)
+- [HackTricks](https://book.hacktricks.xyz/)
+- [CTF Checklist for Beginners](https://fareedfauzi.gitbook.io/ctf-checklist-for-beginner/)
+
+<a name="ctf-labs"></a>
+### Labs
+
+- [CyberDefender](https://cyberdefenders.org/labs/)
 
 # Contributing
 
