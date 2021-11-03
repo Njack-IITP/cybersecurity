@@ -149,6 +149,8 @@ Visit [njack-iitp.github.io/cybersecurity](https://njack-iitp.github.io/cybersec
 ### Labs
 
 - [CyberDefender](https://cyberdefenders.org/labs/)
+- [Hacker101 CTF](https://ctf.hacker101.com/)
+- [HackTheBox](https://www.hackthebox.eu/)
 
 # Contributing
 
