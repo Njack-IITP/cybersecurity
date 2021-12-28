@@ -1,0 +1,25 @@
+<mxfile host="65bd71144e">
+    <diagram id="cWscICYwqIy73P03x3pd" name="Page-1">
+        <mxGraphModel dx="820" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="x2S4PXvfas988WwX56KN-5" value="" style="edgeStyle=none;html=1;strokeColor=#FFFFFF;" parent="1" source="x2S4PXvfas988WwX56KN-1" target="x2S4PXvfas988WwX56KN-4" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="x2S4PXvfas988WwX56KN-1" value="&lt;font face=&quot;Courier New&quot;&gt;&lt;u&gt;&lt;b&gt;&lt;font style=&quot;font-size: 14px&quot;&gt;HARDWARE&lt;/font&gt;&lt;/b&gt;&lt;/u&gt;&lt;br&gt;cpu,memory, ram&lt;/font&gt;" style="whiteSpace=wrap;html=1;fontSize=15;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="x2S4PXvfas988WwX56KN-7" value="" style="edgeStyle=none;html=1;" parent="1" source="x2S4PXvfas988WwX56KN-4" target="x2S4PXvfas988WwX56KN-6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="x2S4PXvfas988WwX56KN-4" value="&lt;font style=&quot;font-size: 15px&quot; face=&quot;Courier New&quot;&gt;&lt;u&gt;&lt;b&gt;OS&lt;/b&gt;&lt;/u&gt;&lt;br&gt;windows,linux&lt;br&gt;,mac&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="160" width="130" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="x2S4PXvfas988WwX56KN-6" value="&lt;font style=&quot;font-size: 15px&quot;&gt;&lt;b&gt;END USER&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="160" width="120" height="60" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
