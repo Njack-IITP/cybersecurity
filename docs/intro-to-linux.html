@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
     <title>Intro to Linux</title>
-    <link rel="shortcut icon" href="./favicon.ico"/>
+    <link rel="shortcut icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="./dist/reset.css" />
     <link rel="stylesheet" href="./dist/reveal.css" />
     <link rel="stylesheet" href="./dist/theme/black.css" id="theme" />
     <link rel="stylesheet" href="./css/highlight/dracula.css" />
+
 
   </head>
   <body>
@@ -17,8 +19,83 @@
 
 # Intro to Linux
 
-#### *Oh I use Arch BTW*
-</script></section></div>
+#### *Oh I use Arch BTW*</script></section><section ><section data-markdown><script type="text/template">
+
+# What is OS ?</script></section><section data-markdown><script type="text/template">### An operating system is a program that acts as an interface between the user and the computer hardware and controls the execution of all kinds of programs.</script></section><section data-markdown><script type="text/template">![image](./assets/intro-to-linux/flow.svg)</script></section></section><section ><section data-markdown><script type="text/template">
+
+# What is Linux ? </script></section><section data-markdown><script type="text/template">## Just like Windows, iOS, and Mac OS, Linux is an operating system.</script></section><section data-markdown><script type="text/template">* ### Linux began in 1991 as a personal project by Finnish student Linus Torvalds.
+* ### It is one of the most popular platforms on the planet.
+* ### Even Android, is powered by the Linux operating system.</script></section><section data-markdown><script type="text/template">## Different pieces of Linux
+* #### Bootloader
+* #### Kernel
+* #### Init system
+* #### Daemons
+* #### Graphical server
+* #### Desktop environment
+* #### Applications</script></section></section><section ><section data-markdown><script type="text/template">
+
+# Windows vs Linux & Why Linux ? </script></section><section data-markdown><script type="text/template">----</script></section></section><section ><section data-markdown><script type="text/template">
+
+# Different Distros of Linux 
+
+* ### Linux has a number of different versions for every type of user.
+* ### These versions are called distributions ( "distros" in short )</script></section><section data-markdown><script type="text/template">## Popular Linux distros : 
+* ### UBUNTU
+* ### KALI LINUX
+* ### DEBIAN
+* ### LINUX MINT
+* ### FEDORA
+* ### PARROT OS
+* ### ARCH LINUX
+* ### Ubuntu Server
+##### and many more....</script></section><section data-markdown><script type="text/template">## Installation 
+* ### Install as the main OS
+* ### Using VirtualBox/VMware
+* ### Dual Boot</script></section><section data-markdown><script type="text/template">##### comming soon ....</script></section></section><section ><section data-markdown><script type="text/template">
+
+# File structure of Linux
+
+#### The Linux File Hierarchy Structure or the Filesystem Hierarchy Standard (FHS) defines the directory structure and directory contents in Unix-like operating systems.</script></section><section data-markdown><script type="text/template">## `/` [/root]
+#### root directory of the entire file system hierarchy</script></section><section data-markdown><script type="text/template">![image](./assets/intro-to-linux/root.png)</script></section><section data-markdown><script type="text/template">* ## `/bin` -->  Contains binary executables
+* ## `/boot` --> Contains Boot loader files, e.g., kernels, initrd. 
+* ## `/dev` --> Essential device files
+* ## `/etc` --> Contains configuration files required by all programs.
+* ## `/home` --> Users’ home directories, containing saved files, personal settings, etc.
+* ## `/lib` --> Libraries essential for the binaries in /bin/ and /sbin/.
+* ##  `/media` --> Temporary mount directory for removable devices.
+* ##  `/opt` --> Contains add-on applications from individual vendors
+* ## `/tmp` --> Directory that contains temporary files created by system and users.
+* ## `/usr` --> Contains binaries, libraries, documentation, and source-code for second level programs.</script></section></section><section ><section data-markdown><script type="text/template">
+
+# Basic commands 
+* ### The Linux command is a utility of the Linux operating system.
+* ### The commands are executed on the Linux terminal.
+* ### We can do basic work and advanced work through its terminal.</script></section><section data-markdown><script type="text/template">* ## `pwd` -> Shows Present working directory
+* ## `mkdir <new_directory>` -> Make new directory
+* ## `rmdir <dir_name>` -> Remove a directory
+* ## `ls` -> Shows list of content of a directory
+* ## `cd <dir_name>` -> Change directory
+* ## `touch <file_name>` -> Create new Empty file
+* ## `cat` -> Create/display/copy file
+* ## `rm <file_name>` -> Remove a file
+* ## `cp` -> copy a file or directory
+* ## `head` & `tail` -> displays first and last 10 lines of a file respectively
+* ## `tac` -> shows file content in reverse order</script></section><section data-markdown><script type="text/template">* ## `su` -> Gives admin access to a user
+* ## `useradd <username>` -> add or remove a user
+* ## `passwd <username>` -> create or change the passowrd for a user
+* ## `groupadd` -> create a user group
+* ## `whoami` & `who` -> gives info abhout logged in user</script></section><section data-markdown><script type="text/template">* ## `grep <options>` -> Used for searching the content from a file using regex.
+* ## `comm <options>` -> compares two files
+* ## `wc <file_name>` -> counts words,lines and charecters in a line.
+* ## `od <options>` -> displays the content of a file in different format.
+* ## `find <options>` -> find particular file in a directory</script></section></section><section  data-markdown><script type="text/template">* ## `df` -> displays disk space used in file system.
+* ## `clear` -> clears the terminal's screen.
+* ## `ifconfig` -> Shows ip of connected networks
+* ## `ssh` -> used to create a remote connection through ssh protocol
+* ## `host` -> displays id of a given domain name or vice versa
+##### and many more ...
+</script></section><section  data-markdown><script type="text/template"># Some common tools 
+</script></section><section  data-markdown><script type="text/template"># Do and Donts </script></section><section  data-markdown><script type="text/template"></script></section></div>
     </div>
 
     <script src="./dist/reveal.js"></script>
