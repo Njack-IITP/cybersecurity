@@ -50,7 +50,7 @@ revealOptions:
 | Lots of games for windows                    | Linux is not for gaming (as for now) |
 | Limited and unstable pen-testing tools       | Lots of pentesting tools        |
 ----
-![image](.\assets\intro-to-linux\win-vs-linux2.jpg)
+![image](./assets/intro-to-linux/win-vs-linux2.jpg)
 ----
 ## Why Linux ? 
 - Linux is a free and open-source software development and distribution.
@@ -132,7 +132,7 @@ revealOptions:
 * #### `head` & `tail` -> displays first and last 10 lines of a file respectively
 * #### `tac` -> shows file content in reverse order
 ----
-![image](.\assets\intro-to-linux\7be.jpg)
+![image](./assets/intro-to-linux/7be.jpg)
 ----
 * #### `su` -> Gives admin access to a user
 * #### `useradd <username>` -> add or remove a user
