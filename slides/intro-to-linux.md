@@ -84,7 +84,7 @@ revealOptions:
 * ### Using VirtualBox/VMware
 * ### Dual Boot
 ----
-![image](.\assets\intro-to-linux\img3.jpg)
+![image](./assets/intro-to-linux/img3.jpg)
 ----
 ##### comming soon ....
 ---
@@ -153,9 +153,9 @@ revealOptions:
 * #### `host` -> Displays id of a given domain name or vice versa
 ----
 * `man` -> Displays manual page for any command
-![image](.\assets\intro-to-linux\man.png)
+![image](./assets/intro-to-linux/man.png)
 ----
-![image](.\assets\intro-to-linux\7be.jpg)
+![image](./assets/intro-to-linux/7be.jpg)
 ---
 
 
@@ -194,6 +194,6 @@ revealOptions:
 
 
 ---
-![gif](.\assets\intro-to-linux\giphy.gif)
+![gif](./assets/intro-to-linux/giphy.gif)
 ### Thank you
 
