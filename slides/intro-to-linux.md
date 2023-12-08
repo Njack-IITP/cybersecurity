@@ -6,7 +6,7 @@ revealOptions:
 
 # Intro to Linux
 
-#### *Oh I use Arch BTW*
+
 ---
 
 
@@ -39,6 +39,14 @@ revealOptions:
 
 # Windows vs Linux & Why Linux ? 
 ----
+| Linux | Windows |
+| ------ | ------ |
+| Linux is a open source operating system. | While windows are the not the open source operating system. |
+| Linux is free of cost. | While it is costly. |
+| Linux is more efficient in comparison of windows. | While windows are less efficient. |
+| Linux provides more security than windows. | While it provides less security than linux. |
+
+##### Source : [Geeks for Geeks](https://www.geeksforgeeks.org/difference-between-linux-and-windows/)
 ----
 ---
 
@@ -131,4 +139,8 @@ revealOptions:
 
 ---
 # Do and Donts 
+---
+
+---
+# Thank You !!!
 ---
